@@ -19,7 +19,7 @@ jobs:
         node-version: '22'
         cache: 'npm'
         
-        - name: Install dependencies
+    - name: Install dependencies
       run: npm install
 
     - name: Build application
@@ -66,3 +66,4 @@ jobs:
               \n\nThis preview will be automatically updated when you push new commits to this PR.`
             });
           }
+

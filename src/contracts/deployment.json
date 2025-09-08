@@ -1,0 +1,8 @@
+{
+  "contractAddress": "0x0000000000000000000000000000000000000000",
+  "vrfCoordinator": "0xd5D517aBE5cF79B7e95eC98dB0f0277788aFF634",
+  "subscriptionId": "1",
+  "network": "base",
+  "deployedAt": "2024-01-01T00:00:00.000Z",
+  "deployer": "0x0000000000000000000000000000000000000000"
+}
