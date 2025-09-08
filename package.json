@@ -6,14 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "api": "node api/index.js",
+    "dev:api": "nodemon api/index.js",
+    "deploy:contract": "npx hardhat run contracts/deploy.js --network base",
+    "deploy:contract:testnet": "npx hardhat run contracts/deploy.js --network base-sepolia",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test"
   },
   "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
     "@dynamic-labs/ethereum": "^2.0.0",
     "@dynamic-labs/sdk-react-core": "^2.0.0",
     "@rainbow-me/rainbowkit": "^2.2.8",
+    "@supabase/supabase-js": "^2.39.0",
     "@tanstack/react-query": "^5.0.0",
     "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.0",
+    "express": "^4.18.2",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,10 +34,13 @@
     "x402-axios": "^0.4.1"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.0",
+    "hardhat": "^2.19.0",
+    "nodemon": "^3.0.1",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.11",
     "vite": "^5.4.1"
